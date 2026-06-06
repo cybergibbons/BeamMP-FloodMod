@@ -9,3 +9,6 @@ Thumbs.db
 *.log
 ctrl.fifo
 .omc/
+
+# stray non-regular file in workspace
+.mcp.json

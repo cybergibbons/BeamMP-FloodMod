@@ -56,6 +56,18 @@ build.sh                     # rebuilds floodBeamMP.zip after client edits
 
 ## Install on a BeamMP server
 
+**Quick (Linux):** from this repo, point `deploy.sh` at your server folder:
+
+```
+./deploy.sh /path/to/BeamMP-Server
+```
+
+It rebuilds the client zip and copies both halves into place. Then restart the
+server. (Use `--no-build` to skip the rebuild, or set `BEAMMP_SERVER_DIR`
+instead of passing the path.)
+
+**Manual:**
+
 1. Copy `Resources/Client/floodBeamMP.zip` into your server's `Resources/Client/`.
 2. Copy `Resources/Server/Flood/` into your server's `Resources/Server/`.
 3. Restart the server. Connecting players auto-download the client mod.
